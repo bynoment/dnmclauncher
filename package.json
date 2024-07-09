@@ -1,7 +1,7 @@
 {
   "name": "DunyaMC",
   "preductname": "DunyaMC",
-  "version": "1.0.5",
+  "version": "1.0.4",
   "description": "DunyaMC Launcher",
   "main": "src/app.js",
   "author": {
@@ -39,6 +39,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bynoment/dnmclauncher.git"
+    "url": "git+https://github.com/bynoment/dunyamclauncher2024.git"
   }
 }
