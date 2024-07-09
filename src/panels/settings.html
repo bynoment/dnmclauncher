@@ -1,0 +1,155 @@
+<div class="container">
+    <div class="nav-settings">
+        <p>Ayarlar</p>
+        <div class="nav-box">
+            <div id="account" class="nav-settings-btn active-settings-BTN">Hesaplar</div>
+            <div id="java" class="nav-settings-btn">Java</div>
+            <div id="resolution" class="nav-settings-btn">Çözünürlük</div>
+            <div id="launcher" class="nav-settings-btn">Launcher</div>
+            <div id="save" class="nav-settings-btn">AnaSayfa</div>
+        </div>
+    </div>
+
+    <div id="account-tab" class="container-settings active-container-settings">
+        <div class="titre-tab">Hesap Seçenekleri</div>
+
+        <div class="accounts-list content-scroll">
+            <div class="account" id="add">
+                <div class="add-profile">
+                    <div class="icon-account-add"></div>
+                </div>
+                <div class="add-text-profile">Hesap Ekle</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="java-tab" class="container-settings content-scroll">
+        <div class="titre-tab">Oyun RAM Ayarları</div>
+        <div class="settings-elements-box">
+            <div class="setting-text">
+                Oyununuza ayrılan RAM'in tanımı, daha büyük miktarda performansı artıracaktır
+                senin oyunun.<br>
+                Lütfen çok fazla miktar eklemekten kaçınmanız gerektigini unutmayın, aksi takdirde ürün kaybına neden olabilir.
+                diger uygulamalarınızdaki performansı.<br><br>
+                <b>-RAM Max:</b> Oyununuza ayrılan toplam RAM miktarını gösterir.
+                PC'nizde bulunan toplam RAM miktarının %50'sini asıyor.<br><br>
+                <b>-RAM Min:</b> Oyununuza baslarken ayrılan minimum RAM miktarını belirtir.
+                bu deger için 4GB'tan fazlasını koymamanız önerilir.
+            </div>
+            <div class="settings-elements content-evenly">
+                <div class="memory-slider" min="0.5" max="8" step="0.5">
+                    <div class="slider-touch-left">
+                        <span value="0 Go"></span>
+                    </div>
+                    <div class="slider-touch-right">
+                        <span value="0 Go"></span>
+                    </div>
+                    <div class="slider-line">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="ram-info-block">
+                    <b>Toplamda <span id="total-ram">0 RAM</span> sahibisin.</b><br>
+                    <b>Toplamda <span id="free-ram">0 Adet</span> RAM kullanabilirsin.</b>
+                </div>
+            </div>
+        </div>
+
+        <div class="titre-tab">Java Lokasyonu</div>
+        <div class="settings-elements-box">
+            <div class="setting-text">
+                Launcher Java'nın yerlesik bir sürümünü kullanıyor.<br>
+                Bu sürüm dizinde mevcuttur :<br><span class="java-path-txt"></span><br>
+                Ancak oyununuz Java'nın daha yüksek bir sürümünü gerektiriyorsa kendi çalıstırılabilir dosyanızı belirleyebilirsiniz.
+                son.
+            </div>
+            <div class="settings-elements content-evenly">
+                <input type="text" class="java-path-input-text" disabled>
+                <input type="file" class="java-path-input-file" accept="application/octet-stream" />
+                <div class="java-path-box">
+                    <div class="java-path-set java-path-btn">Degistir</div>
+                    <div class="java-path-reset java-path-btn">Varsayılan</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="resolution-tab" class="container-settings">
+        <div class="titre-tab">Minecraft çözünürlük ayarları</div>
+        <div class="settings-elements-box">
+            <div class="setting-text">
+                Oyunun ekranınıza uyarlanması için özel bir çözünürlük ayarlayın.<br>
+                Varsayılan olarak oyun 854 x 480'de baslar,<br>oyun konforu için bu degeri degistirebilirsiniz
+                en uygun. İdeal çözünürlük 1280x720'dir.
+            </div>
+            <div class="settings-elements content-center">
+                <div class="input-size-element">
+                    <input type="number" class="width-size input-resolution">
+                    <div class="size-cross"></div>
+                    <input type="number" class="height-size input-resolution">
+                </div>
+                <div class="size-reset size-btn">Varsayılan Ayar</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="launcher-tab" class="container-settings content-scroll">
+        <div class="titre-tab">İndirme Ayarları</div>
+        <div class="settings-elements-box">
+            <div class="setting-text">
+                Bu ayar, indirme sırasında aynı anda indirilebilecek maksimum dosya sayısını belirler.
+                Kaynakların güncellenmesi veya indirilmesi.<br><br>
+
+                Bu ayarı degistirmenin performansı etkileyebilecegini lütfen unutmayın.
+                indirmek.<br>
+                Varsayılan önerilen limitlerin asılmaması önerilir,<br>
+                belirli baglantı sorunlarınız olmadıgı sürece.
+            </div>
+            <div class="settings-elements content-center">
+                <input type="number" class="max-files input-max-files">
+                <p>Fichiers</p>
+                <div class="max-files-reset max-files-btn">Par defaut</div>
+            </div>
+        </div>
+
+        <div class="titre-tab">Açık ve Koyu Tema</div>
+        <div class="settings-elements-box">
+            <div class="setting-text">
+                Baslatıcının görünümünü özellestirmek için açık tema ve koyu tema arasında seçim yapın.<br><br>
+
+                Temayı degistirmek okunabilirligi ve görsel deneyimi etkileyebilir.<br>
+                Tercihlerinize göre size en uygun olanı seçin.
+            </div>
+            <div class="settings-elements content-center theme-box">
+                <div class="theme-btn theme-btn-clair">Aydınlık Tema</div>
+                <div class="theme-btn theme-btn-sombre">Karanlık Tema</div>
+                <div class="theme-btn theme-btn-auto">Otomatik</div>
+            </div>
+        </div>
+
+        <div class="titre-tab">Baslangıçta baslatıcı davranısı</div>
+        <div class="settings-elements-box">
+            <div class="setting-text">
+                Oyunu baslattıgınızda baslatıcının otomatik olarak kapanmasını veya açık kalmasını seçebilirsiniz.
+            </div>
+
+            <div class="settings-elements content-evenly close-box">
+                <div class="close-launcher close-btn">Oyunu baslattıktan sonra baslatıcıyı kapatın</div>
+                <div class="close-none close-btn">Baslatıcıyı açık tutun</div>
+                <div class="close-all close-btn">Baslatıcı kapalıysa oyunu kapatın</div>
+            </div>
+        </div>
+
+        <!-- <div class="titre-tab">Environnement INTEL</div>
+        <div class="settings-elements-box">
+            <div class="setting-text">
+                pour les jouer avec les proseceurs apple silicon 
+            </div>
+
+            <div class="settings-elements content-evenly close-box">
+                <div class="close-launcher close-btn">Environnement INTEL</div>
+                <div class="close-none close-btn">Environnement SILICON</div>
+            </div>
+        </div> -->
+    </div>
+</div>
